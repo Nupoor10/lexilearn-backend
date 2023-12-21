@@ -7,6 +7,7 @@ const summaryRoutes = require('./routes/summaryRoutes');
 const textToSpeechRoutes = require('./routes/textToSpeechRoutes');
 const speechToTextRoutes = require('./routes/speechToTextRoutes');
 const cardRoutes = require('./routes/cardRoutes');
+const noteRoutes = require('./routes/noteRoutes');
 
 dotenv.config();
 const PORT = process.env.PORT;
@@ -26,6 +27,7 @@ app.use("/api/v1/summary", summaryRoutes);
 app.use("/api/v1/texttospeech", textToSpeechRoutes);
 app.use("/api/v1/speechtotext", speechToTextRoutes);
 app.use("/api/v1/card", cardRoutes);
+app.use("/api/v1/note", noteRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server started at Port : ${PORT}`);
