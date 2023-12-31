@@ -2,7 +2,7 @@
   "name": "lexilearn-backend",
   "version": "1.0.0",
   "engines": {
-    "node": ">=20.7.0"
+    "node": ">=18.18.2"
   },
   "description": "",
   "main": "index.js",
