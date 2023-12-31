@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const User = require('./userModel');
 const Schema = mongoose.Schema;
 
 const noteSchema = new Schema({
@@ -10,7 +9,7 @@ const noteSchema = new Schema({
     content: String,
     user: {
         type: mongoose.Types.ObjectId,
-        ref: User,
+        ref: "User",
         required: true,
     },
 }, { timestamps: true });

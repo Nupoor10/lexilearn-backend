@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const User = require('./userModel'); 
 const Schema = mongoose.Schema;
 
 const cardSchema = new Schema({
@@ -13,7 +12,7 @@ const cardSchema = new Schema({
   },
   user: {
     type: mongoose.Types.ObjectId,
-    ref: User,
+    ref: "User",
     required: true,
   },
 }, { timestamps: true });
